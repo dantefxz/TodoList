@@ -13,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>To-Do List</h1>
       <AgregarTarea agregarTarea={agregarTarea} />
       <ListaTareas lista={lista} />

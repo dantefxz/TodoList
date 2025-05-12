@@ -1,5 +1,54 @@
-ul{
+h1{
+    color: var(--color-primary);
+    font-family: cursive;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-foreground);
+    color: var(--color-primary);
+    border-radius: 1rem;
+    height: 3rem;
+    font-family: cursive;
+    margin-left: 0.4rem;
+    height: 20;
+}
+
+input{
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-foreground);
+    font-family: cursive;
+    height: 2.5rem;
+    width: 100%;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.tareaTab{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: center;
+}
+
+.container{
+    background-color: var(--color-background);
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 85rem;
+    border: 0.7rem solid var(--color-accent);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }

@@ -17,7 +17,7 @@ const AgregarTarea = ({ agregarTarea }: AgregarTareaProps) => {
     };
   
     return (
-      <div>
+      <div className="tareaTab">
         <input
           type="text"
           value={tarea}

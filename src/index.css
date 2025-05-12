@@ -6,7 +6,8 @@
   color-scheme: light;
   filter: brightness(85%);
   background-size: 100% 100%;
-  background-image: url("assets/background.jpg");
+  /*background-image: url("assets/background.jpg")*/;
+  background-color: var(--color-foreground);
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vw;
@@ -16,11 +17,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-primary: #e7e1e1;
-  --color-secondary: rgb(196, 18, 77);
+  --color-primary: #ffffff;
+  --color-secondary: #b6178e;
   --color-accent: #0f0f0f;
-  --color-background: #e7e1e1;
-  --color-foreground: #181717;
+  --color-background: #2f3136;
+  --color-foreground: #1d1f22;
 }
 
 a {
@@ -57,11 +58,11 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--color-secondary);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+ /* outline: 4px auto -webkit-focus-ring-color*/;
 }
 
 @media (prefers-color-scheme: light) {
