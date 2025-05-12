@@ -3,14 +3,24 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color-scheme: light;
+  filter: brightness(85%);
+  background-size: 100% 100%;
+  background-image: url("assets/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vw;
+  width: 100%;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #e7e1e1;
+  --color-secondary: rgb(196, 18, 77);
+  --color-accent: #0f0f0f;
+  --color-background: #e7e1e1;
+  --color-foreground: #181717;
 }
 
 a {
