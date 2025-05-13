@@ -12,11 +12,15 @@ const App = () => {
     setLista([...lista, tarea]);
   };
 
+  const removerTarea = (indice: number) => {
+    setLista(lista.filter((_, i) => i !== indice));
+  }
+
   return (
     <div className="container">
       <h1>To-Do List</h1>
       <AgregarTarea agregarTarea={agregarTarea} />
-      <ListaTareas lista={lista} />
+      <ListaTareas lista={lista} onRemoverTarea={removerTarea} /> 
     </div>
   );
 }

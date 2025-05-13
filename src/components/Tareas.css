@@ -31,6 +31,32 @@ input::placeholder{
     text-align: center;
 }
 
+ul{
+    list-style-type: none;
+    color: var(--color-primary);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+}
+
+li button{
+    color: red;
+    background-color: none;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    height: 2%;
+
+}
+
+li button:hover{
+    border-color: red;
+}
+
 .tareaTab{
     display: flex;
     justify-content: center;
