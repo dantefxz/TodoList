@@ -1,28 +1,20 @@
 import { useState } from 'react'
 import './App.css'
-import AgregarTarea from './components/AgregarTarea';
-import ListaTareas from './components/ListaTareas';
-import './components/Tareas.css'
 
-const App = () => {
-  const [lista, setLista] = useState<string[]>([]);
-
-  const agregarTarea = (tarea: string) => {
-    if (tarea.trim() === '') return;
-    setLista([...lista, tarea]);
-  };
-
-  const removerTarea = (indice: number) => {
-    setLista(lista.filter((_, i) => i !== indice));
-  }
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <div className="container">
-      <h1>To-Do List</h1>
-      <AgregarTarea agregarTarea={agregarTarea} />
-      <ListaTareas lista={lista} onRemoverTarea={removerTarea} /> 
-    </div>
-  );
+    <>
+    <Header />
+      <h1>h1</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          Clicking button {count}
+        </button>
+      </div>
+    </>
+  )
 }
 
 export default App
