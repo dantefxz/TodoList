@@ -26,10 +26,3 @@ const App = () => {
 }
 
 export default App
-
-// Colores:
-// Rojo: #f44336 oscurito, #d32f2f brillante
-// Fondo: negro/gris oscuro
-// Texto: blanco/gris oscuro
-// Botones y títulos: rojo (hover o no)
-// Detalles: en blanco
